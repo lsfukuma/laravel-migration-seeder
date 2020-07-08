@@ -32,8 +32,8 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
-//
-// Oggi pomeriggio create una migration per creare una tabella products con le colonne che ritenete più adatte.
+
+
 // Predisponete poi un seeder per popolare la tabella con:
 //  un file di config (un array con i dati per 2/3 prodotti)
 // la classe faker (bastano 10 prodotti)
