@@ -32,9 +32,3 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
-
-
-// Predisponete poi un seeder per popolare la tabella con:
-//  un file di config (un array con i dati per 2/3 prodotti)
-// la classe faker (bastano 10 prodotti)
-// Create poi una rotta /prodotti in cui mostrate la lista di tutti i prodotti presenti nel db
