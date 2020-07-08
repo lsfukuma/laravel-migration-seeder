@@ -15,6 +15,9 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('description')->nullable();
+            $table->decimal('price', 5,2);
             $table->timestamps();
         });
     }
@@ -29,3 +32,9 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
+//
+// Oggi pomeriggio create una migration per creare una tabella products con le colonne che ritenete più adatte.
+// Predisponete poi un seeder per popolare la tabella con:
+//  un file di config (un array con i dati per 2/3 prodotti)
+// la classe faker (bastano 10 prodotti)
+// Create poi una rotta /prodotti in cui mostrate la lista di tutti i prodotti presenti nel db
